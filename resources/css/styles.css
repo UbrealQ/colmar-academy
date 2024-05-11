@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+header, main, footer, div, nav {
+    border: 0.5px solid red;
+}
+
+body {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin: auto;
+}
+
+header, main, footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navigation*/
+
+header {
+    position: fixed;
+    height: 4rem;
+    z-index: 2;
+}
+
+header, .content-nav, .logo, .dekstop ul, nav ul, footer {
+    display: flex;
+}
+
+header, .content-nav, .logo, nav ul {
+    align-items: center;
+}
+
+header, .content-nav, footer {
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+}
+
+.logo img {
+    height: 2rem;
+}
+
+.content-nav, nav {
+    margin: 0 1.5rem;
+    
+}
+
+.content-nav span {
+    font-size: 1.2rem;
+}
+
+nav li {
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+nav a {
+    color: black;
+}
+
+main {
+    position: relative;
+    top: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+.mobile {
+    display: none;
+}
+
+

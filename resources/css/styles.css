@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
 }
-
+/**
 header, main, footer, div, nav {
     border: 0.5px solid red;
 }
-
+**/
 body {
     font-size: 16px;
     margin: auto;
@@ -36,7 +36,7 @@ header, .content-nav, .logo, .dekstop ul, nav ul, footer {
     width: 100%;
 }
 
-header, .content-nav, .logo, nav ul {
+header, .content-nav, .logo, nav ul, footer {
     align-items: center;
     white-space: nowrap;
 }
@@ -289,48 +289,112 @@ main {
   grid-template-rows: 1fr 1.1fr 1fr; 
   gap: 0px 0px; 
   padding-bottom: 2rem;
+  border-bottom: #999898 2px solid;
 }
 
 .left-exhibit {
     grid-area: 1 / 1 / 4 / 2; 
-    padding: 24px 32px 24px 24px;
-}
-
-.right-exhibit { 
-    grid-area: 1 / 2 / 4 / 3; 
-}
-
-.fisma-container {
-    grid-area: 1 / 2 / 2 / 3; 
-}
-
-.now-container { 
-    grid-area: 2 / 2 / 3 / 3; 
+    padding: 0 24px 24px 24px;
 }
 
 .video-container video {
     width: 100%;
     height: auto;
+    padding-bottom: 24px;
 }
 
+.left-exhibit h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
 
+.left-exhibit p {
+    padding-bottom: 32px;
+}
 
-
-
-footer {
+.right-exhibit { 
+    grid-area: 1 / 2 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: flex-start;
+    align-content: flex-start;
     width: 100%;
+}
+
+.img-fisma1 {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    margin: 5px;
+    background-color: #999898;
+}
+
+.img-fisma2 {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    margin: 5px;
+}
+
+.fisma-container {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.fisma-container h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.fisma-container p {
+    margin-top: 8px;
+}
+
+.img-fisma1 img {
+    display: flex;
+    width: 35%;
+}
+
+.img-fisma2 img {
+    display: flex;
+    width: 35%;
+}
+
+.now-container { 
+    grid-area: 2 / 2 / 3 / 3; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.now-container h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.now-container p {
+    margin-top: 8px;
+}
+
+.footer {
     position: relative;
     padding: 1rem 0 1rem 0;
+    width: 100%;
 }
-
-.footer span {
-    padding-left: 1.5rem;
-    
+  
+.footer nav {
+    float: right;
+    text-align: right;
 }
-
-
-
-
 
 .mobile {
     display: none;
